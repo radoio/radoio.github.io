@@ -1,1 +1,87 @@
-Hello, World
+<html>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
+        @font-face {
+            font-family: Quicksand;
+        }
+
+        body {
+            font-family: Quicksand, sans-serif;
+            background-color: #f3efe9;
+        }
+
+        button {
+            font-family: Quicksand, sans-serif;
+            letter-spacing: 0.1em;
+            font-weight: bolder;
+            color: white;
+            font-size: 120%;;
+            background-color: magenta;
+            border-radius: 100px;
+            border: 1.5px dashed darkblue;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: darkblue;
+            color: white;
+        }
+
+        div {
+            width: 100%;
+            text-align: center;
+            color: darkblue;
+        }
+
+        div#main {
+            margin-top: 5%;
+        }
+
+        div#resume {
+            margin-top: 5%;
+        }
+
+        div#resume button {
+            padding: 1%;
+        }
+
+        span#name {
+            font-size: 500%;
+            letter-spacing: 0.1em;
+            display: block;
+        }
+
+        span#title {
+            margin-top: 2%;
+            font-size: 300%;
+            letter-spacing: 0.08em;
+            display: block;
+        }
+
+        span.dots {
+            color: magenta;
+            font-weight: bolder;
+            letter-spacing: 0.2em;
+        }
+
+    </style>
+
+    <body>
+        <div id="main">
+            <span id="name">Rakesh <b>Dodda</b></span>
+            <span id="title">
+                <span class="dots">::</span>
+                <span>software_engineer</span>
+                <span class="dots">::</span>
+            </span>
+        </div>
+        <div id="resume">
+            <form method="get" action="https://radoio.github.io/resume.pdf">
+                <button type="submit">Open Resume</button>
+            </form>
+        </div>
+    </body>
+
+</html>
